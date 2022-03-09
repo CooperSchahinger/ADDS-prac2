@@ -10,20 +10,20 @@ Computer::Computer()
 char Computer::makeMove()
 {
     char choice = 'R';
-    switch((rand() %3) + 1)
-    {
-        case 1:
-            choice = 'R';
-            break;
-        case 2: 
-            choice = 'P';
-            break;
-        case 3: 
-            choice = 'S';
-            break;
-    }
+    // switch((rand() %3) + 1)
+    // {
+    //     case 1:
+    //         choice = 'R';
+    //         break;
+    //     case 2: 
+    //         choice = 'P';
+    //         break;
+    //     case 3: 
+    //         choice = 'S';
+    //         break;
+    // }
 
-    setMove(choice);
+    // setMove(choice);
     return choice;
 }
 

@@ -45,7 +45,7 @@ char Referee::refGame(Human Player, Computer Computer)
         gameResult = 'W';
     }
 
-    // setResult(gameResult);
+    setResult(gameResult);
     return gameResult;
 }
 
