@@ -2,7 +2,7 @@
 
 char Referee::findWinner(char humanChoice, char computerChoice)
 {
-    char gameResult;
+    char gameResult = 'T';
 
     int huChoice = humanChoice;
 

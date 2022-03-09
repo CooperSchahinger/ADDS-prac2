@@ -9,7 +9,7 @@ Computer::Computer()
 
 char Computer::makeMove()
 {
-    char choice;
+    char choice = 'R';
     switch((rand() %3) + 1)
     {
         case 1:
