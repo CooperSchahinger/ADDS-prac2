@@ -1,12 +1,12 @@
 #include "Referee.h"
 
-char Referee::findWinner(char humanChoice, char computerChoice)
+char Referee::findWinner(Human Player, Computer Computer)
 {
     char gameResult = 'T';
 
-    int huChoice = humanChoice;
+    int huChoice = Player.getMove();
 
-    int compChoice = computerChoice;
+    int compChoice = Computer.makeMove();
 
     if( huChoice == 'R' && compChoice == 'R')
     {
@@ -47,6 +47,15 @@ char Referee::findWinner(char humanChoice, char computerChoice)
 
     setResult(gameResult);
     return gameResult;
+}
+
+char Referee::showWinner()
+{
+    Human human;
+    Computer computer;
+    char winner = findWinner(human, computer);
+
+    return winner;
 }
 
 void Referee::setResult(char gameRes)
