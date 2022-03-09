@@ -5,11 +5,11 @@
 
 int main()
 {
-    // Human Player;
-    // Computer Computer;
+    Human Player;
+    Computer Computer;
     Referee Ref;
 
-    std::cout << Ref.showWinner() << std::endl;
+    std::cout << Ref.refGame(Player, Computer) << std::endl;
 
     return 0;
 }

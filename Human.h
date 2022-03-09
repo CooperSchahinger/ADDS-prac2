@@ -6,7 +6,7 @@ class Human
     char move;
     void setMove(char human);
 public:
-    char getMove();
+    char makeMove();
 };
 
 #endif

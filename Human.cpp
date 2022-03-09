@@ -2,7 +2,7 @@
 #include <iostream>
 
 
-char Human::getMove()
+char Human::makeMove()
 {
     char humanMove;
     std::cout << "Make a choice (R,P,S):" << std::endl;

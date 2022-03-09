@@ -8,9 +8,9 @@ class Referee
 {
     char result;
     void setResult(char gameResult);
-    char findWinner(Human Human, Computer Computer);
 public:
-    char showWinner();
+    char refGame(Human Human, Computer Computer);
+    // char showWinner();
 };
 
 #endif

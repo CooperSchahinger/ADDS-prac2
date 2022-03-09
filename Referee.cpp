@@ -1,10 +1,10 @@
 #include "Referee.h"
 
-char Referee::findWinner(Human Player, Computer Computer)
+char Referee::refGame(Human Player, Computer Computer)
 {
     char gameResult = 'T';
 
-    int huChoice = Player.getMove();
+    int huChoice = Player.makeMove();
 
     int compChoice = Computer.makeMove();
 
@@ -45,18 +45,18 @@ char Referee::findWinner(Human Player, Computer Computer)
         gameResult = 'W';
     }
 
-    setResult(gameResult);
+    // setResult(gameResult);
     return gameResult;
 }
 
-char Referee::showWinner()
-{
-    Human human;
-    Computer computer;
-    char winner = findWinner(human, computer);
+// char Referee::showWinner()
+// {
+//     Human human;
+//     Computer computer;
+//     char winner = findWinner(human, computer);
 
-    return winner;
-}
+//     return winner;
+// }
 
 void Referee::setResult(char gameRes)
 {
